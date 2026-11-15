@@ -1,39 +1,17 @@
-password = input("Enter a password: ")
+# Password Strength Checker
 
-score = 0
-tips = []
+A simple Python program that checks how strong a password is and gives tips to improve it.
 
-if len(password) >= 8:
-    score += 1
-else:
-    tips.append("Use at least 8 characters")
+## Features
+- Checks length (8+ characters), lowercase, uppercase, numbers, and symbols
+- Rates the password as Weak, Medium, or Strong
+- Suggests tips to make weak passwords stronger
 
-if any(c.islower() for c in password):
-    score += 1
-else:
-    tips.append("Add lowercase letters")
+## How to run
+python password_checker.py
 
-if any(c.isupper() for c in password):
-    score += 1
-else:
-    tips.append("Add uppercase letters")
+## Sample output
+See the screenshots in this repository.
 
-if any(c.isdigit() for c in password):
-    score += 1
-else:
-    tips.append("Add numbers")
-
-if any(not c.isalnum() for c in password):
-    score += 1
-else:
-    tips.append("Add symbols like @ # $")
-
-if score <= 2:
-    print("Weak")
-elif score <= 4:
-    print("Medium")
-else:
-    print("Strong")
-
-for tip in tips:
-    print("Tip:", tip)
+## Author
+Manaal M, B.E. CSE (Cyber Security)
