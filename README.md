@@ -11,7 +11,20 @@ A simple Python program that checks how strong a password is and gives tips to i
 python password_checker.py
 
 ## Sample output
-See the screenshots in this repository.
+Weak: see the screenshot in this repository.
+
+Medium password:
+```
+Enter a password: hello@2026
+Medium
+Tip: Add uppercase letters
+```
+
+Strong password:
+```
+Enter a password: Hello@2026
+Strong
+```
 
 ## Author
 Manaal M, B.E. CSE (Cyber Security)
